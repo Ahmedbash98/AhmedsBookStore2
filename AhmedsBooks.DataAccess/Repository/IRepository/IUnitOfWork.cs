@@ -10,6 +10,8 @@ namespace AhmedsBooks.DataAccess.Repository.IRepository
     {
         ICategoryRepository Category { get; }
 
+        ICoverTypeRepository CoverType { get; }
+
         ISP_call SP_Call { get; }
 
         void Save();

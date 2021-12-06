@@ -15,6 +15,9 @@ namespace AhmedsBookStore.DataAccess.Data
         }
 
         public DbSet<Category> Catgories { get; set; }
-        public object Categories { get; internal set; }
+
+        public DbSet<CoverType> CoverTypes { get; set; }
+
+
     }
 }
