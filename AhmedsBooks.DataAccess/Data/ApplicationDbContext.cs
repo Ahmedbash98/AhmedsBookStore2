@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using AhmedsBooks.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -12,5 +13,7 @@ namespace AhmedsBookStore.DataAccess.Data
             : base(options)
         {
         }
+
+        public DbSet<Category> Catgories { get; set; }
     }
 }
