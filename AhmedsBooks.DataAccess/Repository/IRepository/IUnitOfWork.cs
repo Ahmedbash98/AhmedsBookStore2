@@ -12,6 +12,8 @@ namespace AhmedsBooks.DataAccess.Repository.IRepository
 
         ICoverTypeRepository CoverType { get; }
 
+        IProductRepository Product { get; }
+
         ISP_call SP_Call { get; }
 
         void Save();

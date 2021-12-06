@@ -1,4 +1,5 @@
-﻿using AhmedsBooks.Models;
+﻿using AhmedsBooks.DataAccess.Repository.IRepository;
+using AhmedsBooks.Models;
 using AhmedsBookStore.DataAccess.Data;
 using System;
 using System.Collections.Generic;
