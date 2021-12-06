@@ -1,4 +1,6 @@
 
+using AhmedsBooks.DataAccess.Repository;
+using AhmedsBooks.DataAccess.Repository.IRepository;
 using AhmedsBookStore.DataAccess.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -35,6 +37,7 @@ namespace AhmedsBookStore
 
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
         }
 
