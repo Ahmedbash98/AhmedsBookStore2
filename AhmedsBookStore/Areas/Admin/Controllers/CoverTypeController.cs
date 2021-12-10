@@ -28,10 +28,10 @@ namespace AhmedsBookStore.Areas.Admin.Controllers
             CoverType coverType = new CoverType();
             if (id == null)
             {
-                // this is for create
+                
                 return View(coverType);
             }
-            // this is for edit
+         
             coverType = _unitOfWork.CoverType.Get(id.GetValueOrDefault());
             if (coverType == null)
             {

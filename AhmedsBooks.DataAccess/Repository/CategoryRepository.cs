@@ -18,10 +18,7 @@ namespace AhmedsBooks.DataAccess.Repository
             _db = db;
         }
 
-       public void Add(CoverType coverType)
-        {
-            throw new NotImplementedException();
-        }
+
 
         public void Update(Category category)
         {
